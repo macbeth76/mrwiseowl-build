@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mr Wise Owl Test Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        .summary { display: flex; gap: 20px; margin: 20px 0; }
+        .card { flex: 1; padding: 20px; border-radius: 8px; text-align: center; }
+        .passed { background: #d4edda; color: #155724; }
+        .failed { background: #f8d7da; color: #721c24; }
+        .total { background: #d1ecf1; color: #0c5460; }
+        .card h2 { margin: 0; font-size: 48px; }
+        .card p { margin: 5px 0 0 0; font-size: 14px; }
+        .section { margin: 30px 0; }
+        .section h3 { color: #34495e; border-left: 4px solid #3498db; padding-left: 10px; }
+        pre { background: #f8f9fa; padding: 15px; border-radius: 4px; overflow-x: auto; }
+        .pass { color: #28a745; }
+        .fail { color: #dc3545; }
+        .timestamp { color: #6c757d; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦉 Mr Wise Owl Test Report</h1>
+        <p class="timestamp">Generated: Sun Nov 30 14:50:47 EST 2025</p>
+        
+        <div class="summary">
+            <div class="card total">
+                <h2>25</h2>
+                <p>Total Tests</p>
+            </div>
+            <div class="card passed">
+                <h2>25</h2>
+                <p>Passed</p>
+            </div>
+            <div class="card failed">
+                <h2>0</h2>
+                <p>Failed</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>📡 API Tests (19/19)</h3>
+            <pre>🧪 Mr Wise Owl API Tests
+API URL: https://explicit-tiffani-wiseowltech-07037a1a.koyeb.app
+Started: Sun Nov 30 14:42:32 EST 2025
+================================
+
+🏥 Health Checks
+----------------
+Testing Health Check... <span class="pass">✅</span> PASS (HTTP 200)
+Testing Health Status... <span class="pass">✅</span> PASS (UP)
+Testing Service Name... <span class="pass">✅</span> PASS (Mr Wise Owl API)
+
+🏙️  Town Endpoints
+----------------
+Testing Get Town by ID... <span class="pass">✅</span> PASS (HTTP 200)
+Testing Town Name... <span class="pass">✅</span> PASS (Asheville)
+Testing Town Latitude... <span class="pass">✅</span> PASS (35.5951)
+Testing Town Longitude... <span class="pass">✅</span> PASS (-82.5515)
+Testing Town State... <span class="pass">✅</span> PASS (North Carolina)
+Testing Search Towns (empty)... <span class="pass">✅</span> PASS (HTTP 200)
+Testing Search Towns (query)... <span class="pass">✅</span> PASS (HTTP 200)
+
+📍 POI Endpoints
+----------------
+Testing Get POIs by Town... <span class="pass">✅</span> PASS (HTTP 200)
+Testing POI Count... <span class="pass">✅</span> PASS (3)
+Testing First POI Name... <span class="pass">✅</span> PASS (Biltmore Estate)
+Testing First POI Category... <span class="pass">✅</span> PASS (historic)
+Testing Get POIs by Category... <span class="pass">✅</span> PASS (HTTP 200)
+
+<span class="fail">❌</span> Error Handling
+----------------
+Testing Invalid Town ID... <span class="pass">✅</span> PASS (HTTP 404)
+Testing Invalid POI Query... <span class="pass">✅</span> PASS (HTTP 200)
+
+🔒 CORS Tests
+----------------
+Testing CORS for Vercel... <span class="pass">✅</span> PASS
+Testing CORS for localhost... <span class="pass">✅</span> PASS
+
+================================
+Results: 19 passed, 0 failed
+Completed: Sun Nov 30 14:43:01 EST 2025</pre>
+        </div>
+
+        <div class="section">
+            <h3>🌐 E2E Tests (6/6)</h3>
+            <pre>🌐 Mr Wise Owl E2E Tests
+Frontend: https://frontend-d2xv0d6gx-wise-owl-techs-projects.vercel.app
+API: https://explicit-tiffani-wiseowltech-07037a1a.koyeb.app
+Started: Sun Nov 30 14:43:01 EST 2025
+================================
+
+📄 Page Load Tests
+-------------------
+Testing Frontend Homepage... <span class="pass">✅</span> PASS (HTTP 200)
+Testing Page Title... <span class="pass">✅</span> PASS (Found: frontend)
+Testing App Container... <span class="pass">✅</span> PASS (Found: root)
+
+📦 Asset Loading
+-------------------
+Testing JavaScript Bundle... <span class="pass">✅</span> PASS (Bundle loaded)
+Testing CSS Bundle... <span class="pass">✅</span> PASS (Styles loaded)
+
+🔌 API Integration
+-------------------
+Testing API Connectivity... <span class="pass">✅</span> PASS (API reachable)
+
+🗺️  Map & Data Tests
+-------------------
+Note: Full map interaction tests require browser automation (Playwright/Selenium)
+Manual test checklist:
+  - [ ] Map loads with Asheville centered
+  - [ ] 3 POI markers visible (Biltmore, Wicked Weed, KOA)
+  - [ ] Clicking markers shows popup with POI details
+  - [ ] Map is interactive (zoom, pan)
+
+================================
+Results: 6 passed, 0 failed
+Completed: Sun Nov 30 14:43:03 EST 2025</pre>
+        </div>
+    </div>
+</body>
+</html>

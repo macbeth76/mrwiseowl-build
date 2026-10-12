@@ -1,0 +1,42 @@
+🧪 Mr Wise Owl API Tests
+API URL: https://explicit-tiffani-wiseowltech-07037a1a.koyeb.app
+Started: Sun Nov 30 14:50:58 EST 2025
+================================
+
+🏥 Health Checks
+----------------
+Testing Health Check... ✅ PASS (HTTP 200)
+Testing Health Status... ✅ PASS (UP)
+Testing Service Name... ✅ PASS (Mr Wise Owl API)
+
+🏙️  Town Endpoints
+----------------
+Testing Get Town by ID... ✅ PASS (HTTP 200)
+Testing Town Name... ✅ PASS (Asheville)
+Testing Town Latitude... ✅ PASS (35.5951)
+Testing Town Longitude... ✅ PASS (-82.5515)
+Testing Town State... ✅ PASS (North Carolina)
+Testing Search Towns (empty)... ✅ PASS (HTTP 200)
+Testing Search Towns (query)... ✅ PASS (HTTP 200)
+
+📍 POI Endpoints
+----------------
+Testing Get POIs by Town... ✅ PASS (HTTP 200)
+Testing POI Count... ✅ PASS (3)
+Testing First POI Name... ✅ PASS (Biltmore Estate)
+Testing First POI Category... ✅ PASS (historic)
+Testing Get POIs by Category... ✅ PASS (HTTP 200)
+
+❌ Error Handling
+----------------
+Testing Invalid Town ID... ✅ PASS (HTTP 404)
+Testing Invalid POI Query... ✅ PASS (HTTP 200)
+
+🔒 CORS Tests
+----------------
+Testing CORS for Vercel... ✅ PASS
+Testing CORS for localhost... ✅ PASS
+
+================================
+Results: 19 passed, 0 failed
+Completed: Sun Nov 30 14:51:29 EST 2025

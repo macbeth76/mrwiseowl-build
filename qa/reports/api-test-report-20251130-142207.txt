@@ -1,0 +1,15 @@
+🧪 Mr Wise Owl API Tests
+API URL: https://explicit-tiffani-wiseowltech-07037a1a.koyeb.app
+Started: Sun Nov 30 14:22:08 EST 2025
+================================
+Testing Health Check... ✅ PASS (HTTP 200)
+Testing Health Status... ✅ PASS (UP)
+Testing Get Town by ID... ✅ PASS (HTTP 200)
+Testing Town Name... ✅ PASS (Asheville)
+Testing Town Coordinates... ✅ PASS (35.5951)
+Testing Get POIs by Town... ✅ PASS (HTTP 200)
+Testing POI Count... ✅ PASS (3)
+Testing Invalid Town ID... ❌ FAIL (Expected 404, got 500)
+================================
+Results: 7 passed, 1 failed
+Completed: Sun Nov 30 14:22:11 EST 2025

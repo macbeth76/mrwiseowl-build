@@ -1,0 +1,10 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "cd backend && ./gradlew build -x test"
+
+[deploy]
+startCommand = "cd backend && java -jar build/libs/mrwiseowl-0.0.1-SNAPSHOT.jar"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 100
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
